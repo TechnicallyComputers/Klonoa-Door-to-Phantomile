@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Klonoa - Door to Phantomile",
+    "id": "SLUS-00585",
+    "boot_exe": "SLUS_005.85"
+  },
+  "marketing": {
+    "description": "Klonoa: Door to Phantomile is a side-scrolling platform game viewed from a \"2.5D\" perspective. The player moves the protagonist, Klonoa, along a path in a two-dimensional fashion, but the game is rendered in three dimensions. This allows the path followed to curve and for the player to interact with objects outside of the path.",
+    "publisher": "Namco",
+    "year": "1997",
+    "region": "USA",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Klonoa - Door to Phantomile (USA).cue",
+    "bin_name": "Klonoa - Door to Phantomile (USA).bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 736197168,
+      "md5": "ecb502ce253246899d23db80847c56dc",
+      "sha1": "cb2dc62789092d8b480971427f9c85815e815dce",
+      "crc32": "77e279e8"
+    },
+    "disc_fp": "4e792f4e74b99a409b1d1b837709a47c541ea00ac1a5c991b66e0a321a3df79b"
+  },
+  "exe": {
+    "load_address": "0x80180000",
+    "entry_pc": "0x80180C18",
+    "text_size": "0x0000B000",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 110,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

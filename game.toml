@@ -1,0 +1,53 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "Klonoa - Door to Phantomile"
+id = "SLUS-00585"
+players = 1
+exe = "disc/SLUS_005.85"
+disc = "disc/Klonoa - Door to Phantomile (USA).cue"
+load_address = "0x80180000"
+entry_pc = "0x80180C18"
+text_size = "0x0000B000"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Klonoa - Door to Phantomile (USA).bin"
+cue_name = "Klonoa - Door to Phantomile (USA).cue"
+boot_exe = "SLUS_005.85"
+known_sizes = [736197168]
+known_md5 = [
+  "ecb502ce253246899d23db80847c56dc",
+]
+known_sha1 = [
+  "cb2dc62789092d8b480971427f9c85815e815dce",
+]
+known_crc32 = [
+  "77e279e8",
+]
+
+[recompiler]
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "Klonoa - Door to Phantomile Recompiled"
+memcard_dir = "saves"
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "4e792f4e74b99a409b1d1b837709a47c541ea00ac1a5c991b66e0a321a3df79b"
