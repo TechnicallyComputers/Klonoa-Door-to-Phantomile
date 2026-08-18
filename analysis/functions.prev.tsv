@@ -4,228 +4,108 @@ addr	size	name	confidence	args	ret	callers	callees	frame	saved	tags
 0x80180B18	248	func_80180B18	verified	4	u32	1	1	48	s0|s1|s2|s3|ra	
 0x80180C10	8	func_80180C10	high	0	void	1	0	0		leaf
 0x80180C18	188	BootEntry	low	0	u32	0	2	0		break|gp
-0x80180CD4	16	bios_A0_39_InitHeap	verified	0	void	1	0	0		bios|leaf|indirect
-0x80180CE4	16	bios_A0_51_LoadAndExecute	verified	0	void	1	0	0		bios|leaf|indirect
-0x80180CF4	16	bios_A0_71_CdInit	verified	0	void	1	0	0		bios|leaf|indirect
+0x80180CD4	12	bios_A0_39_InitHeap	verified	0	void	1	0	0		bios|leaf|indirect
+0x80180CE4	12	bios_A0_51_LoadAndExecute	verified	0	void	1	0	0		bios|leaf|indirect
+0x80180CF4	12	bios_A0_71_CdInit	verified	0	void	1	0	0		bios|leaf|indirect
 0x80180D04	84	func_80180D04	verified	1	void	1	6	24	s0|ra	
-0x80180D58	56	func_80180D58	medium	0	void	0	4	24	ra	orphan
 0x80180D90	48	func_80180D90	verified	0	void	1	3	24	ra	
-0x80180DC0	16	func_80180DC0	high	0	void	11	0	0		leaf|syscall
-0x80180DD0	16	func_80180DD0	high	0	void	9	0	0		leaf|syscall
-0x80180DE0	16	bios_B0_5B_ChangeClearPad	verified	0	void	8	0	0		bios|leaf|indirect
-0x80180DF0	16	bios_B0_4A_InitCard	verified	0	void	1	0	0		bios|leaf|indirect
-0x80180E00	16	bios_B0_4B_StartCard	verified	0	void	1	0	0		bios|leaf|orphan|indirect
-0x80180E10	16	bios_B0_4C_StopCard	verified	0	void	1	0	0		bios|leaf|indirect
-0x80180E20	88	func_80180E20	high	0	u32	1	0	0		leaf|addr_taken|indirect
-0x80180E78	136	func_80180E78	high	0	u32	1	3	0		indirect
-0x80180F00	48	func_80180F00	high	0	void	2	1	0		addr_taken
-0x80180F30	108	func_80180F30	high	0	u32	2	3	0		indirect
-0x80180F9C	24	func_80180F9C	low	0	void	0	0	0		leaf|orphan
-0x80180FC0	16	bios_A0_44_FlushCache	verified	0	void	4	0	0		bios|leaf|indirect
+0x80180DC0	16	func_80180DC0	high	0	void	8	0	0		leaf|syscall
+0x80180DD0	16	func_80180DD0	high	0	void	5	0	0		leaf|syscall
+0x80180DE0	12	bios_B0_5B_ChangeClearPad	verified	0	void	4	0	0		bios|leaf|indirect
+0x80180DF0	12	bios_B0_4A_InitCard	verified	0	void	1	0	0		bios|leaf|indirect
+0x80180E00	12	bios_B0_4B_StartCard	verified	0	void	0	0	0		bios|leaf|orphan|indirect
+0x80180E10	12	bios_B0_4C_StopCard	verified	0	void	1	0	0		bios|leaf|indirect
+0x80180E78	136	func_80180E78	high	0	u32	1	2	0		indirect
+0x80180F30	108	func_80180F30	high	0	u32	2	2	0		indirect
+0x80180FC0	12	bios_A0_44_FlushCache	verified	0	void	4	0	0		bios|leaf|indirect
 0x80180FD0	104	func_80180FD0	high	0	u32	1	3	0		indirect
-0x80181050	236	func_80181050	medium	4	u32	0	2	48	s0|s1|s2|s3|ra	orphan
-0x8018113C	104	func_8018113C	medium	3	u32	0	2	40	s0|s1|ra	orphan
-0x801811A4	104	func_801811A4	medium	3	u32	0	2	40	s0|s1|ra	orphan
 0x8018120C	208	func_8018120C	verified	4	u32	1	2	40	s0|s1|s2|s3|s4|ra	
 0x801812DC	60	func_801812DC	high	4	u32	1	0	0		leaf
-0x80181318	208	func_80181318	medium	4	u32	1	1	40	s0|s1|s2|s3|ra	orphan
-0x801813E8	24	func_801813E8	low	2	u32	2	0	0		leaf|orphan
-0x80181400	208	func_80181400	medium	1	u32	0	2	32	s0|ra	orphan
-0x801814D0	64	func_801814D0	medium	1	u32	0	1	24	ra	orphan
-0x80181510	28	func_80181510	low	1	u32	0	0	0		leaf|orphan
-0x8018152C	28	func_8018152C	low	1	u32	0	0	0		leaf|orphan
-0x80181548	60	func_80181548	low	2	u32	0	0	0		leaf|orphan
-0x80181584	60	func_80181584	low	3	u32	0	0	0		leaf|orphan
-0x801815C0	36	func_801815C0	low	2	u32	0	0	0		leaf|orphan
-0x801815E4	24	func_801815E4	low	1	u32	0	0	0		leaf|orphan
-0x801815FC	40	func_801815FC	low	2	u32	0	0	0		leaf|orphan
-0x80181624	40	func_80181624	low	2	u32	0	0	0		leaf|orphan
-0x8018164C	20	func_8018164C	low	1	u32	0	0	0		leaf|orphan
-0x80181660	20	func_80181660	low	1	u32	0	0	0		leaf|orphan
-0x80181674	20	func_80181674	low	1	u32	0	0	0		leaf|orphan
-0x80181688	20	func_80181688	low	1	u32	0	0	0		leaf|orphan
-0x8018169C	20	func_8018169C	low	1	u32	0	0	0		leaf|orphan
-0x801816B0	20	func_801816B0	low	1	u32	0	0	0		leaf|orphan
-0x801816C4	20	func_801816C4	low	1	u32	0	0	0		leaf|orphan
-0x801816D8	20	func_801816D8	low	1	u32	0	0	0		leaf|orphan
-0x801816EC	20	func_801816EC	low	1	u32	0	0	0		leaf|orphan
-0x80181700	20	func_80181700	low	1	u32	0	0	0		leaf|orphan
-0x80181714	20	func_80181714	low	1	u32	0	0	0		leaf|orphan
-0x80181728	20	func_80181728	low	1	u32	0	0	0		leaf|orphan
-0x8018173C	20	func_8018173C	low	1	u32	0	0	0		leaf|orphan
-0x80181750	20	func_80181750	low	1	u32	0	0	0		leaf|orphan
-0x80181764	20	func_80181764	low	1	u32	0	0	0		leaf|orphan
-0x80181778	20	func_80181778	low	1	u32	0	0	0		leaf|orphan
-0x8018178C	20	func_8018178C	low	1	u32	0	0	0		leaf|orphan
-0x801817A0	32	func_801817A0	low	1	u32	0	0	0		leaf|orphan
-0x801817C0	32	func_801817C0	low	1	u32	0	0	0		leaf|orphan
-0x801817E0	32	func_801817E0	low	1	u32	0	0	0		leaf|orphan
-0x80181800	32	func_80181800	low	1	u32	0	0	0		leaf|orphan
-0x80181820	180	func_80181820	medium	4	u32	0	1	40	s0|s1|s2|s3|ra	orphan
-0x801818D4	96	func_801818D4	low	4	u32	0	0	0		leaf|orphan
-0x80181934	108	func_80181934	low	2	u32	0	0	0		leaf|orphan
-0x801819A0	56	func_801819A0	low	2	u32	0	0	0		leaf|orphan
-0x801819D8	384	func_801819D8	medium	1	u32	0	2	32	s0|ra	orphan
-0x80181B58	172	func_80181B58	medium	1	u32	0	1	32	s0|ra	orphan
+0x80181318	208	func_80181318	medium	4	u32	0	1	40	s0|s1|s2|s3|ra	orphan
+0x801813E8	24	func_801813E8	low	2	u32	0	0	0		leaf|orphan
 0x80181C04	388	func_80181C04	verified	1	u32	1	5	32	s0|s1|ra	indirect
-0x80181D88	276	func_80181D88	low	1	u32	0	1	0	s0|s1|s2|ra	orphan|indirect
 0x80181E9C	100	func_80181E9C	verified	1	u32	1	1	24	s0|ra	
-0x80181F00	172	func_80181F00	low	1	u32	0	2	0	s0|s1|s2|ra	orphan|indirect
-0x80181FAC	16	func_80181FAC	high	0	u32	6	0	0		leaf
-0x80181FBC	16	func_80181FBC	low	0	u32	0	0	0		leaf|orphan
-0x80181FCC	92	func_80181FCC	low	1	u32	0	1	0	s0|ra	orphan
+0x80181FAC	16	func_80181FAC	high	0	u32	3	0	0		leaf
 0x80182028	156	func_80182028	verified	1	u32	1	2	32	s0|s1|ra	indirect
 0x801820C4	108	func_801820C4	high	1	u32	1	1	0	s0|ra	indirect
-0x80182130	296	func_80182130	verified	2	u32	5	1	32	s0|ra	
+0x80182130	296	func_80182130	verified	2	u32	2	1	32	s0|ra	
 0x80182258	148	func_80182258	verified	4	u32	1	1	40	s0|s1|s2|s3|ra	indirect
-0x801822EC	156	func_801822EC	medium	4	u32	0	1	40	s0|s1|s2|s3|ra	orphan|indirect
-0x80182388	100	func_80182388	verified	2	u32	4	1	32	s0|s1|ra	indirect
-0x801823EC	100	func_801823EC	medium	2	u32	0	1	32	s0|s1|ra	orphan|indirect
-0x80182450	196	func_80182450	medium	3	u32	0	1	32	s0|s1|s2|ra	orphan|indirect
+0x80182388	100	func_80182388	verified	2	u32	1	1	32	s0|s1|ra	indirect
 0x80182514	184	func_80182514	high	2	u32	1	1	0	s0|s1|ra	
-0x801825CC	152	func_801825CC	low	2	u32	0	1	0	s0|s1|ra	orphan|indirect
-0x80182664	96	func_80182664	medium	1	u32	0	0	32	s0|s1|ra	orphan|indirect
 0x801826C4	116	func_801826C4	high	1	u32	1	1	0	s0|ra	indirect
 0x80182738	260	func_80182738	verified	1	u32	1	2	32	s0|s1|s2|ra	indirect
-0x8018283C	284	func_8018283C	medium	2	u32	0	2	40	s0|s1|s2|s3|ra	orphan|indirect
-0x80182958	56	func_80182958	medium	1	u32	0	1	24	s0|ra	orphan
 0x80182990	1192	func_80182990	high	1	u32	1	4	0	s0|s1|s2|s3|ra	indirect
-0x80182E38	56	func_80182E38	medium	1	u32	0	1	24	s0|ra	orphan
-0x80182E70	48	func_80182E70	low	0	u32	0	0	0	ra	orphan|indirect
-0x80182EA0	60	func_80182EA0	medium	2	u32	0	1	24	s0|ra	orphan
-0x80182EDC	132	func_80182EDC	medium	2	u32	0	2	32	s0|s1|ra	orphan
-0x80182F60	68	func_80182F60	medium	2	u32	0	1	24	s0|ra	orphan
-0x80182FA4	44	func_80182FA4	low	3	u32	0	0	0		leaf|orphan
-0x80182FD0	88	func_80182FD0	medium	4	u32	0	2	32	s0|s1|ra	orphan
-0x80183028	536	func_80183028	medium	2	u32	0	5	64	s0|s1|ra	orphan
-0x80183240	656	func_80183240	verified	2	u32	2	5	64	s0|s1|ra	
-0x801834D0	88	func_801834D0	high	3	u32	3	0	0		leaf
-0x80183528	204	func_80183528	high	2	u32	3	0	0		leaf
-0x801835F4	204	func_801835F4	high	2	u32	3	0	0		leaf
-0x801836C0	68	func_801836C0	high	2	u32	3	0	0		leaf
-0x80183704	132	func_80183704	high	1	u32	4	0	0		leaf
+0x80183240	656	func_80183240	verified	2	u32	1	5	64	s0|s1|ra	
+0x801834D0	88	func_801834D0	high	3	u32	1	0	0		leaf
+0x80183528	204	func_80183528	high	2	u32	1	0	0		leaf
+0x801835F4	204	func_801835F4	high	2	u32	1	0	0		leaf
+0x801836C0	68	func_801836C0	high	2	u32	1	0	0		leaf
+0x80183704	132	func_80183704	high	1	u32	1	0	0		leaf
 0x80183788	176	func_80183788	high	1	u32	1	0	0		leaf
-0x80183838	24	func_80183838	high	0	u32	0	0	0		leaf|addr_taken
-0x80183850	232	func_80183850	high	2	u32	0	2	32	s0|s1|ra	addr_taken
-0x80183938	604	func_80183938	high	2	u32	0	2	64	s0|s1|ra	addr_taken
-0x80183B94	572	func_80183B94	high	2	u32	0	2	80	s0|s1|s2|s3|s4|s5|ra	addr_taken
-0x80183DD0	644	func_80183DD0	high	2	u32	0	2	72	s0|s1|s2|s3|s4|ra	addr_taken
-0x80184054	40	func_80184054	high	1	u32	0	0	0		leaf|addr_taken
-0x8018407C	20	func_8018407C	high	1	u32	0	0	0		leaf|addr_taken
-0x80184090	80	func_80184090	high	2	u32	0	0	8		leaf|addr_taken
-0x801840E0	76	func_801840E0	high	1	u32	1	0	0		leaf|addr_taken
-0x8018412C	48	func_8018412C	high	1	u32	1	0	0		leaf|addr_taken
-0x8018415C	36	func_8018415C	high	3	void	0	1	24	ra	addr_taken
-0x80184180	736	func_80184180	verified	4	u32	1	5	40	s0|s1|s2|s3|ra	addr_taken|indirect
-0x80184460	748	func_80184460	high	0	u32	2	2	0	s0|ra	addr_taken|indirect
+0x801840E0	76	func_801840E0	low	1	u32	0	0	0		leaf|orphan
+0x8018412C	48	func_8018412C	high	1	u32	0	0	0		leaf|addr_taken
+0x80184180	736	func_80184180	medium	4	u32	0	5	40	s0|s1|s2|s3|ra	orphan|indirect
+0x80184460	748	func_80184460	medium	0	u32	1	2	0	s0|ra	addr_taken|orphan|indirect
 0x8018474C	348	func_8018474C	verified	1	u32	1	3	24	s0|ra	addr_taken
-0x801848A8	328	func_801848A8	high	1	u32	0	3	24	s0|ra	addr_taken
-0x801849F0	52	func_801849F0	verified	0	u32	5	1	24	ra	
-0x80184A24	364	func_80184A24	verified	0	u32	5	3	32	ra	
+0x801849F0	52	func_801849F0	medium	0	u32	1	1	24	ra	orphan
+0x80184A24	364	func_80184A24	medium	0	u32	1	3	32	ra	orphan
 0x80184B90	220	func_80184B90	high	1	u32	1	0	0		leaf
 0x80184C6C	44	func_80184C6C	verified	3	u32	3	0	8		leaf
-0x80184C98	16	bios_A0_49_GPU_cw	verified	0	void	1	0	0		bios|leaf|indirect
-0x80184CA8	52	func_80184CA8	high	3	u32	3	0	0		leaf
-0x80184CDC	60	func_80184CDC	verified	4	u32	27	1	24	ra	
+0x80184C98	12	bios_A0_49_GPU_cw	verified	0	void	1	0	0		bios|leaf|indirect
+0x80184CA8	52	func_80184CA8	high	3	u32	1	0	0		leaf
+0x80184CDC	60	func_80184CDC	verified	4	u32	17	1	24	ra	
 0x80184D18	1672	func_80184D18	verified	3	u32	1	3	136	s0|s1|s2|s3|s4|s5|s6|s7|fp|ra	break
-0x801853A0	48	func_801853A0	low	1	u32	0	0	0		leaf|orphan
-0x801853D0	48	func_801853D0	low	1	u32	0	0	0		leaf|orphan
 0x80185400	80	func_80185400	high	3	u32	1	0	0		leaf
 0x80185450	180	func_80185450	verified	1	u32	3	2	32	ra	
-0x80185504	16	bios_B0_35_FileWrite	verified	0	void	1	0	0		bios|leaf|indirect
+0x80185504	12	bios_B0_35_FileWrite	verified	0	void	1	0	0		bios|leaf|indirect
 0x80185514	48	func_80185514	high	1	u32	1	0	0		leaf
-0x80185544	16	func_80185544	low	0	u32	0	0	0		leaf|orphan
-0x80185554	16	func_80185554	low	0	u32	0	0	0		leaf|orphan
-0x80185564	16	func_80185564	low	0	u32	0	0	0		leaf|orphan
-0x80185574	16	func_80185574	low	0	u32	0	0	0		leaf|orphan
-0x80185584	108	func_80185584	medium	1	u32	0	3	24	s0|ra	orphan
 0x801855F0	32	func_801855F0	verified	0	void	1	1	24	ra	
-0x80185610	24	func_80185610	low	1	u32	0	0	0		leaf|orphan
-0x80185628	52	func_80185628	low	1	u32	0	0	0		leaf|orphan
-0x8018565C	52	func_8018565C	low	1	u32	0	0	0		leaf|orphan
-0x80185690	32	func_80185690	medium	0	void	0	1	24	ra	orphan
-0x801856B0	32	func_801856B0	medium	0	void	0	1	24	ra	orphan
-0x801856D0	24	func_801856D0	low	1	u32	0	0	0		leaf|orphan
-0x801856E8	24	func_801856E8	low	1	u32	0	0	0		leaf|orphan
-0x80185700	312	func_80185700	medium	3	u32	0	1	56	s0|s1|s2|s3|s4|s5|s6|s7|ra	orphan
-0x80185838	300	func_80185838	medium	2	u32	0	1	48	s0|s1|s2|s3|s4|s5|s6|ra	orphan
-0x80185964	324	func_80185964	medium	3	u32	0	2	48	s0|s1|s2|s3|s4|s5|s6|ra	orphan
-0x80185AA8	32	func_80185AA8	medium	0	u32	0	1	24	ra	orphan
-0x80185AC8	32	func_80185AC8	medium	0	u32	0	1	24	ra	orphan
-0x80185AE8	36	func_80185AE8	medium	1	void	0	1	24	ra	orphan
-0x80185B0C	32	func_80185B0C	medium	0	void	0	1	24	ra	orphan
-0x80185B2C	260	func_80185B2C	low	2	u32	0	0	0		leaf|orphan
-0x80185C30	128	func_80185C30	low	1	u32	0	0	0		leaf|orphan
-0x80185CB0	1416	func_80185CB0	medium	0	u32	4	2	48	s0|s1|ra	orphan
-0x80186238	640	func_80186238	medium	2	u32	4	6	56	s0|s1|s2|s3|s4|s5|s6|ra	orphan|indirect
-0x801864B8	716	func_801864B8	medium	2	u32	1	6	64	s0|s1|s2|s3|s4|s5|s6|s7|ra	orphan|indirect
-0x80186784	1052	func_80186784	low	4	u32	4	7	0	s0|s1|s2|s3|s4|s5|ra	orphan|indirect
-0x80186BA0	136	func_80186BA0	low	1	u32	1	0	0		leaf|orphan
+0x80185CB0	1416	func_80185CB0	medium	0	u32	3	2	48	s0|s1|ra	orphan
+0x80186238	640	func_80186238	medium	2	u32	2	6	56	s0|s1|s2|s3|s4|s5|s6|ra	orphan|indirect
+0x801864B8	716	func_801864B8	medium	2	u32	0	6	64	s0|s1|s2|s3|s4|s5|s6|s7|ra	orphan|indirect
+0x80186784	1052	func_80186784	low	4	u32	1	7	0	s0|s1|s2|s3|s4|s5|ra	orphan|indirect
+0x80186BA0	136	func_80186BA0	low	1	u32	0	0	0		leaf|orphan
 0x80186C28	224	func_80186C28	high	0	u32	5	0	0		leaf
-0x80186D08	244	func_80186D08	low	0	u32	1	0	0		leaf|orphan
-0x80186DFC	80	func_80186DFC	medium	0	void	1	3	24	ra	orphan
-0x80186E4C	492	func_80186E4C	medium	0	u32	1	7	24	ra	orphan
-0x80187038	364	func_80187038	medium	1	u32	1	4	48	s0|s1|s2|s3|ra	orphan
-0x801871A4	256	func_801871A4	low	2	u32	1	0	0		leaf|orphan
-0x801872A4	16	func_801872A4	low	1	void	0	0	0		leaf|orphan
-0x801872B4	228	func_801872B4	medium	0	u32	2	1	0	s0|s1|s2|s3|ra	addr_taken|orphan|indirect
+0x80186D08	244	func_80186D08	low	0	u32	0	0	0		leaf|orphan
+0x80186DFC	80	func_80186DFC	medium	0	void	0	2	24	ra	orphan
+0x80186E4C	492	func_80186E4C	medium	0	u32	0	6	24	ra	orphan
+0x80187038	364	func_80187038	medium	1	u32	0	4	48	s0|s1|s2|s3|ra	orphan
+0x801871A4	256	func_801871A4	low	2	u32	0	0	0		leaf|orphan
 0x80187398	80	func_80187398	verified	1	void	7	1	24	s0|ra	
 0x801873E8	80	func_801873E8	verified	1	u32	1	3	24	ra	
-0x80187438	40	func_80187438	medium	0	u32	0	1	24	ra	orphan
 0x80187460	32	func_80187460	verified	0	void	1	1	24	ra	
-0x80187480	16	bios_B0_16_OutdatedPadGetButtons	verified	0	void	1	0	0		bios|leaf|orphan|indirect
-0x80187490	16	func_80187490	low	1	void	0	0	0		leaf|orphan
-0x801874A0	16	func_801874A0	low	0	u32	0	0	0		leaf|orphan
+0x80187480	12	bios_B0_16_OutdatedPadGetButtons	verified	0	void	0	0	0		bios|leaf|orphan|indirect
 0x801874B0	140	func_801874B0	verified	4	u32	1	6	40	s0|s1|s2|s3|ra	
-0x8018753C	140	func_8018753C	medium	4	u32	0	6	40	s0|s1|s2|s3|ra	orphan
-0x801875C8	48	func_801875C8	medium	0	void	0	3	24	ra	orphan
 0x801875F8	48	func_801875F8	verified	0	void	1	3	24	ra	
-0x80187628	128	func_80187628	verified	0	u32	2	6	24	s0|ra	
+0x80187628	128	func_80187628	verified	0	u32	1	4	24	s0|ra	
 0x801876A8	56	func_801876A8	verified	0	u32	1	3	24	ra	
-0x801876E0	104	func_801876E0	high	0	u32	1	0	0		leaf|addr_taken
-0x80187748	64	func_80187748	high	0	u32	1	0	0		leaf|addr_taken
-0x80187788	16	bios_B0_12_InitPad	verified	0	void	1	0	0		bios|leaf|orphan|indirect
-0x80187798	16	bios_B0_13_StartPad	verified	0	void	1	0	0		bios|leaf|orphan|indirect
-0x801877A8	16	bios_B0_14_StopPad	verified	0	void	1	0	0		bios|leaf|indirect
-0x801877B8	16	bios_B0_15_OutdatedPadInitAndStart	verified	0	void	1	0	0		bios|leaf|indirect
-0x801877C8	16	bios_C0_02_SysEnqIntRP	verified	0	void	1	0	0		bios|leaf|indirect
-0x801877D8	16	bios_C0_03_SysDeqIntRP	verified	0	void	2	0	0		bios|leaf|indirect
-0x801877E8	20	func_801877E8	low	0	void	1	0	0		leaf|orphan|indirect
+0x80187788	12	bios_B0_12_InitPad	verified	0	void	0	0	0		bios|leaf|orphan|indirect
+0x80187798	12	bios_B0_13_StartPad	verified	0	void	0	0	0		bios|leaf|orphan|indirect
+0x801877A8	12	bios_B0_14_StopPad	verified	0	void	1	0	0		bios|leaf|indirect
+0x801877B8	12	bios_B0_15_OutdatedPadInitAndStart	verified	0	void	1	0	0		bios|leaf|indirect
+0x801877C8	12	bios_C0_02_SysEnqIntRP	verified	0	void	1	0	0		bios|leaf|indirect
+0x801877D8	12	bios_C0_03_SysDeqIntRP	verified	0	void	2	0	0		bios|leaf|indirect
+0x801877E8	20	func_801877E8	low	0	void	0	0	0		leaf|orphan|indirect
 0x801877FC	20	func_801877FC	low	0	void	1	0	0		leaf|indirect
-0x80187810	104	func_80187810	high	0	u32	2	2	0		indirect
+0x80187810	104	func_80187810	high	0	u32	1	2	0		indirect
 0x80187878	328	func_80187878	high	1	u32	7	1	0	s0|s1|ra	
 0x801879C0	156	func_801879C0	verified	2	u32	1	3	32	ra	
-0x80187A5C	16	bios_C0_0A_ChangeClearRCnt	verified	0	void	2	0	0		bios|leaf|indirect
+0x80187A5C	12	bios_C0_0A_ChangeClearRCnt	verified	0	void	1	0	0		bios|leaf|indirect
 0x80187A6C	48	func_80187A6C	high	0	u32	4	0	0	ra	indirect
 0x80187A9C	48	func_80187A9C	low	0	u32	4	0	0	ra	orphan|indirect
-0x80187ACC	48	func_80187ACC	high	0	u32	4	0	0	ra	indirect
-0x80187AFC	52	func_80187AFC	medium	1	u32	0	0	24	ra	orphan|indirect
-0x80187B30	48	func_80187B30	low	0	u32	0	0	0	ra	orphan|indirect
+0x80187ACC	48	func_80187ACC	low	0	u32	2	0	0	ra	orphan|indirect
 0x80187B60	48	func_80187B60	high	0	u32	1	0	0	ra	indirect
-0x80187B90	48	func_80187B90	low	0	u32	0	0	0	ra	orphan|indirect
 0x80187BC0	16	func_80187BC0	low	0	u32	3	0	0		leaf|orphan
-0x80187BD0	24	func_80187BD0	low	0	u32	0	0	0		leaf|orphan
 0x80187BE8	28	func_80187BE8	high	1	u32	4	0	0		leaf
-0x80187C04	104	func_80187C04	medium	0	u32	0	2	24	s0|ra	addr_taken
-0x80187C6C	116	func_80187C6C	low	0	u32	0	6	0		orphan
-0x80187CE0	488	func_80187CE0	medium	0	u32	1	2	40	s0|s1|s2|s3|s4|ra	orphan|indirect
-0x80187EC8	340	func_80187EC8	high	2	u32	0	2	40	s0|s1|s2|s3|s4|ra	addr_taken
-0x8018801C	172	func_8018801C	high	0	u32	0	2	24	s0|ra	addr_taken
-0x801880C8	136	func_801880C8	medium	0	u32	0	2	24	s0|ra	orphan
-0x80188150	44	func_80188150	verified	2	u32	1	0	8		leaf
-0x80188184	24	bios_A0_72_CdRemove	verified	0	void	1	0	0		bios|leaf|orphan|indirect
-0x8018819C	16	bios_B0_17_ReturnFromException	verified	0	void	1	0	0		bios|leaf|orphan|indirect
-0x801881AC	16	bios_B0_18_SetDefaultExitFromException	verified	0	void	1	0	0		bios|leaf|indirect
-0x801881BC	16	bios_B0_19_SetCustomExitFromException	verified	0	void	2	0	0		bios|leaf|orphan|indirect
-0x801881CC	60	func_801881CC	high	1	u32	1	0	0		leaf|gp
-0x80188208	60	func_80188208	low	2	u32	0	0	0		leaf|orphan
-0x8018824C	88	func_8018824C	medium	0	u32	1	4	24	ra	orphan
-0x801882A4	120	func_801882A4	medium	0	u32	1	0	0	s0|s1|ra	addr_taken|orphan|indirect
-0x8018831C	44	func_8018831C	medium	2	u32	1	0	0		leaf|addr_taken|orphan
+0x80187CE0	488	func_80187CE0	medium	0	u32	0	2	40	s0|s1|s2|s3|s4|ra	orphan|indirect
+0x80188150	44	func_80188150	medium	2	u32	0	0	8		leaf|orphan
+0x80188184	12	bios_A0_72_CdRemove	verified	0	void	0	0	0		bios|leaf|orphan|indirect
+0x8018819C	12	bios_B0_17_ReturnFromException	verified	0	void	1	0	0		bios|leaf|orphan|indirect
+0x801881AC	12	bios_B0_18_SetDefaultExitFromException	verified	0	void	0	0	0		bios|leaf|orphan|indirect
+0x801881BC	12	bios_B0_19_SetCustomExitFromException	verified	0	void	0	0	0		bios|leaf|orphan|indirect
+0x801881CC	60	func_801881CC	low	1	u32	0	0	0		leaf|gp|orphan
+0x8018824C	88	func_8018824C	medium	0	u32	0	2	24	ra	orphan
 0x80188348	44	func_80188348	medium	2	u32	1	0	8		leaf|orphan
-0x80188374	80	func_80188374	medium	0	u32	1	4	24	ra	orphan
-0x801883C4	388	func_801883C4	medium	0	u32	1	1	0	s0|s1|s2|s3|s4|s5|ra	addr_taken|orphan|indirect
-0x80188548	168	func_80188548	medium	2	u32	1	0	0		leaf|addr_taken|orphan
+0x80188374	80	func_80188374	medium	0	u32	0	2	24	ra	orphan
 0x801885F0	44	func_801885F0	medium	2	u32	1	0	8		leaf|orphan
-0x8018861C	24	func_8018861C	low	1	u32	0	0	0		leaf|orphan
 0x80188634	16	func_80188634	high	0	u32	2	0	0		leaf

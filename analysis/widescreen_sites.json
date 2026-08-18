@@ -1,0 +1,13 @@
+{
+  "schema": "psxrecomp widescreen sites v1",
+  "static_only": true,
+  "imms_discovered": true,
+  "w_imms": [257,259,281],
+  "h_imms": [289],
+  "extent_funcs": [2149061132,2149067152],
+  "candidates": [
+    {"kind": "a1_sites", "pc": 2149065096, "func": 2149065008, "partner": 2149065100, "confidence": 50, "instr": "nop", "evidence": "takes $a1; repurposable nop 1 word(s) before `addu` folds it into a coordinate"},
+    {"kind": "a1_sites", "pc": 2149066852, "func": 2149066812, "partner": 2149066864, "confidence": 50, "instr": "nop", "evidence": "takes $a1; repurposable nop 3 word(s) before `addu` folds it into a coordinate"},
+    {"kind": "a1_sites", "pc": 2149072380, "func": 2149072336, "partner": 2149072388, "confidence": 50, "instr": "nop", "evidence": "takes $a1; repurposable nop 2 word(s) before `addu` folds it into a coordinate"}
+  ]
+}
