@@ -37,6 +37,14 @@ strict = true
 [runtime]
 window_title = "Klonoa - Door to Phantomile Recompiled"
 memcard_dir = "saves"
+# Klonoa's boot EXE is only 0xB000 bytes; the game proper (including the STR/FMV
+# player) is loaded from disc at runtime, so with no overlay cache it ALL runs in
+# the dirty-RAM interpreter — measured at 11-17M interpreted insn/s and 72% of
+# process CPU in dirty_ram_dispatch during the intro FMV. overlay_cache turns on
+# the loader; overlay_autocompile_cmd is also what arms autocapture-on-interp-
+# pressure (see main.cpp: autocapture is only enabled when a cmd is configured).
+overlay_cache = true
+overlay_autocompile_cmd = "python3 psxrecomp/tools/compile_overlays.py --captures build-release/overlay_captures.json --game-toml game.toml --recompiler build-recompiler/psxrecomp-game --runtime-include psxrecomp/runtime/include --out-dir build-release/cache"
 
 [video]
 renderer = "opengl"
